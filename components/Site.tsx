@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import { useEffect, useState } from 'react';
 import { LANGS, type Lang } from '@/lib/dict';
 import { detectLang, LangProvider, rich, saveLang, useT } from '@/lib/i18n';
@@ -191,7 +192,7 @@ function Page({ onLang }: { onLang: (l: Lang) => void }) {
         {/* ABOUT */}
         <section id="om" className="sec wrap about">
           <div className="about-card" data-reveal>
-            <div className="portrait" aria-hidden><span>FT</span></div>
+            <div className="portrait"><Image src="/me.webp" alt={t.about.photoAlt} width={662} height={828} sizes="(max-width: 980px) 280px, 360px" /></div>
             <p className="who"><b>Filip Tomczak</b><span className="muted">{t.about.role}</span></p>
           </div>
           <div>

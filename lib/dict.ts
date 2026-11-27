@@ -30,7 +30,7 @@ export type Dict = {
     price: string;
   };
   principles: { eyebrow: string; title: string; items: Pair[] };
-  about: { eyebrow: string; title: string; body: string[]; facts: string[]; link: string; role: string };
+  about: { eyebrow: string; title: string; body: string[]; facts: string[]; link: string; role: string; photoAlt: string };
   faq: { eyebrow: string; title: string; items: Pair[] };
   contact: {
     eyebrow: string; title: string; lede: string;
@@ -130,6 +130,7 @@ const da: Dict = {
     ],
   },
   about: {
+    photoAlt: 'Filip Tomczak i mørk hættetrøje med sin sort-hvide kat',
     eyebrow: 'Om',
     title: 'Hvem du arbejder med',
     role: 'Grundlægger, Kerne AI',
@@ -252,6 +253,7 @@ const en: Dict = {
     ],
   },
   about: {
+    photoAlt: 'Filip Tomczak in a dark hoodie with his black and white cat',
     eyebrow: 'About',
     title: "Who you'll work with",
     role: 'Founder, Kerne AI',
@@ -374,6 +376,7 @@ const pl: Dict = {
     ],
   },
   about: {
+    photoAlt: 'Filip Tomczak w ciemnej bluzie z kapturem ze swoim czarno-białym kotem',
     eyebrow: 'O mnie',
     title: 'Z kim będziesz pracować',
     role: 'Założyciel, Kerne AI',

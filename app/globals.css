@@ -245,12 +245,8 @@ button { font: inherit; color: inherit; }
 /* About */
 .about { display: grid; grid-template-columns: 0.7fr 1.3fr; gap: clamp(32px, 6vw, 88px); align-items: start; }
 .about-card { position: sticky; top: 100px; }
-.portrait { aspect-ratio: 4 / 5; border-radius: 18px; background:
-  radial-gradient(circle at 50% 42%, var(--pollen) 0 12%, transparent 12.5%),
-  repeating-radial-gradient(circle at 50% 42%, transparent 0 22px, rgba(241,236,226,.18) 22px 23px),
-  var(--moss);
-  display: grid; place-items: end start; padding: 18px; color: var(--paper); }
-.portrait span { font-family: var(--serif); font-style: italic; font-size: 2.4rem; font-variation-settings: 'SOFT' 100, 'WONK' 1; }
+.portrait { aspect-ratio: 4 / 5; border-radius: 18px; overflow: hidden; background: var(--moss); box-shadow: 0 24px 50px -28px rgba(27,26,23,.55); }
+.portrait img { display: block; width: 100%; height: 100%; object-fit: cover; }
 .who { display: flex; flex-direction: column; margin: 14px 0 0; }
 .about .body { margin: 0 0 16px; color: var(--ink-2); max-width: 62ch; }
 .link { display: inline-block; margin-top: 26px; font-weight: 560; text-decoration-color: var(--moss); text-underline-offset: 4px; }
